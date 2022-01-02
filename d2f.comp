@@ -7,10 +7,11 @@
 #   out: [fb]
 # }
 
-fb=/dev/fd/5
+echo d2f.comp
 
 root=$1
 name=$2
+fb=/dev/fd/5
 
 pfr=$root/bin/pfr
 sed=sed

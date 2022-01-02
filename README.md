@@ -13,3 +13,6 @@ i.e. if 1st arg is a string, it is $1, else it is /dev/fd/3
 i.e. if 2nd arg is a string, it is $2, else it is /dev/fd/4
 i.e. if 3rd arg is a string, it is $3, else it is /dev/fd/5
 ...
+
+string args can be passed directly into proc
+other args/returns must use a pipe

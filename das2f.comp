@@ -1,0 +1,16 @@
+# in: [ root name d2f ]
+# out: [ fb ]
+
+root=$1
+name=$2
+d2f=$3
+fb=/dev/fd/6
+
+p=pipe_$RANDOM
+mkfifo $p
+
+$d2f $root $name 5>$p &
+pid=$!
+cat <$p >$fb
+wait $pid
+rm -f $p
