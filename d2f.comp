@@ -1,0 +1,28 @@
+# (root name) -> (fb)
+
+# # convert a .drawio diagram into a factbase
+
+# d2f {
+#   in: [root name]
+#   out: [fb]
+# }
+
+fb=/dev/fd/5
+
+root=$1
+name=$2
+
+pfr=$root/bin/pfr
+sed=sed
+sort=sort
+d2fdir=$root/d2f
+
+$pfr $name.drawio $d2fdir/drawio.ohm $d2fdir/drawio.glue --support=$d2fdir/support.js \
+    | $pfr - $d2fdir/diagram.ohm $d2fdir/diagram.glue --support=$d2fdir/support.js \
+    | $pfr - $d2fdir/styleexpander.ohm $d2fdir/styleexpander.glue --support=$d2fdir/support.js \
+    | $pfr - $d2fdir/factbase.ohm $d2fdir/factbase.glue --support=$d2fdir/support.js \
+    | $sed -E -e 's/</\n</g' \
+    | $sort \
+    | $sed -E -e '/^[ \t]*$/d' \
+	   > $fb
+
