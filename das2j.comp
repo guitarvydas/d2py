@@ -5,10 +5,11 @@ echo das2j.comp
 
 input_root=/dev/fd/3
 input_name=/dev/fd/4
-input_das2f=/dev/fd/5
-output_json=/dev/fd/6
+input_d2f=/dev/fd/5
+input_das2f=/dev/fd/6
+output_json=/dev/fd/7
 
 read das2f <$input_das2f
 
-$das2f 3<$input_root 4<$input_name 5>$output_json &
+$das2f 3<$input_root 4<$input_name 5<$input_d2f 6>$output_json &
 pid=$!
