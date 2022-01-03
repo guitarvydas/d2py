@@ -45,3 +45,5 @@ echo helloworld >$ductB &
 realpath ./d2f.comp >$ductC &
 realpath ./das2f.comp >$ductD &
 cat <$ductE
+
+rm -f $ductA $ductB $ductC $ductD $ductE
