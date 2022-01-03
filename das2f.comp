@@ -1,16 +1,14 @@
 # in: [ root name d2f ]
 # out: [ fb ]
 
-root=$1
-name=$2
-d2f=$3
-fb=/dev/fd/6
+echo das2f.comp
 
-p=pipe_$RANDOM
-mkfifo $p
+input_root=/dev/fd/3
+input_name=/dev/fd/4
+input_d2f=/dev/fd/5
+output_fb=/dev/fd/6
 
-$d2f $root $name 5>$p &
+read d2f <$input_d2f
+
+$d2f 3<$input_root 4<$input_name 5>$output_fb &
 pid=$!
-cat <$p >$fb
-wait $pid
-rm -f $p
