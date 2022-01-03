@@ -34,10 +34,7 @@ ductA=ductA_$RANDOM
 ductB=ductB_$RANDOM
 ductC=ductC_$RANDOM
 ductD=ductD_$RANDOM
-mkfifo $ductA
-mkfifo $ductB
-mkfifo $ductC
-mkfifo $ductD
+mkfifo $ductA $ductB $ductC $ductD
 
 ./das2f.comp 3<$ductA 4<$ductB 5<$ductC 6>$ductD &
 pid1=$!
