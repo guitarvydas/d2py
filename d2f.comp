@@ -1,3 +1,4 @@
+#!/bin/bash
 # (root name) -> (fb)
 
 # # convert a .drawio diagram into a factbase
@@ -7,11 +8,15 @@
 #   out: [fb]
 # }
 
-echo d2f.comp
+echo d2f.comp 1>&2
 
-root=$1
-name=$2
-fb=/dev/fd/5
+ductroot=/dev/fd/3
+ductname=/dev/fd/4
+ductfb=/dev/fd/5
+
+read root <$ductroot
+read name <$ductname
+fb=$ductfb
 
 pfr=$root/bin/pfr
 sed=sed
