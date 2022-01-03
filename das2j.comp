@@ -1,0 +1,14 @@
+# in: [ root name d2f ]
+# out: [ fb ]
+
+echo das2j.comp
+
+input_root=/dev/fd/3
+input_name=/dev/fd/4
+input_das2f=/dev/fd/5
+output_json=/dev/fd/6
+
+read das2f <$input_das2f
+
+$das2f 3<$input_root 4<$input_name 5>$output_json &
+pid=$!

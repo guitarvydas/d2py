@@ -30,19 +30,19 @@
 
 clear
 echo dev.bash
-duct1=duct1_$RANDOM
-duct2=duct2_$RANDOM
-duct3=duct3_$RANDOM
-duct4=duct4_$RANDOM
-mkfifo $duct1
-mkfifo $duct2
-mkfifo $duct3
-mkfifo $duct4
+ductA=ductA_$RANDOM
+ductB=ductB_$RANDOM
+ductC=ductC_$RANDOM
+ductD=ductD_$RANDOM
+mkfifo $ductA
+mkfifo $ductB
+mkfifo $ductC
+mkfifo $ductD
 
-./das2f.comp 3<$duct1 4<$duct2 5<$duct3 6>$duct4 &
+./das2f.comp 3<$ductA 4<$ductB 5<$ductC 6>$ductD &
 pid1=$!
 
-realpath ~/app >$duct1 &
-echo helloworld >$duct2 &
-realpath ./d2f.comp >$duct3 &
-cat <$duct4
+realpath ~/app >$ductA &
+echo helloworld >$ductB &
+realpath ./d2f.comp >$ductC &
+cat <$ductD
