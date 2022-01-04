@@ -36,10 +36,6 @@ ${das2fdir}/layerkind ${das2fdir} 1>&2 # <<>>fb.pl
 
 # #############
 
-
-echo early early exit
-exit 1
-
 ${das2fdir}/layername ${das2fdir} 1>&2 # <<>>fb.pl
 ${das2fdir}/layercolor ${das2fdir} 1>&2 # <<>>fb.pl
 ${das2fdir}/layerboundingbox ${das2fdir} 1>&2 # <<>>fb.pl

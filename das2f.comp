@@ -31,10 +31,6 @@ cp $tempfbfile1 $fb
 das2fdir=$root/das2f
 ./das2f-run.bash $das2fdir >$tempfbfile2
 
-
-echo early exit 1>&2
-exit 1
-
 rm -f $tempfbfile1 
 rm -f $tempfbfile2
 rm -f $temp_input_root
