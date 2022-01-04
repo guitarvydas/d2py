@@ -1,18 +1,34 @@
 # in: [ root name d2f das2f das2j ]
-# out: [ hello.py world.py helloworld.py top.py ]
+# out: [ fb ]
 
-set -x 
-echo das2py.comp
+echo das2j.comp
+set -x
 
 input_root=/dev/fd/3
 input_name=/dev/fd/4
 input_d2f=/dev/fd/5
 input_das2f=/dev/fd/6
 input_das2j=/dev/fd/7
+output_json=/dev/fd/8
 
 read das2j <$input_das2j
 
-echo $das2j
+# read root, then re-send it
+read root <$input_root
+temp_input_root=das2ftemp_root_$RANDOM
+echo $root >$temp_input_root
+# read name, then re-send it
+read name <$input_name
+temp_input_name=das2ftemp_name_$RANDOM
+echo $name >$temp_input_name
 
-$das2j 3<$input_root 4<$input_name 5<$input_d2f 6<$input_das2f 7>&1 &
+tempjsonfile1=das2pytemp2_$RANDOM
+$das2j 3<$temp_input_root 4<$temp_input_name 5<$input_d2f 6<$input_das2f 7>$tempjsonfile1 &
 pid=$!
+
+wait $pid
+python $root/shu-das2py/emit.py $tempjsonfile1 $name
+
+rm -f $tempjsonfile1 
+rm -f $temp_input_root
+rm -f $temp_input_name

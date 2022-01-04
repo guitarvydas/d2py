@@ -8,9 +8,9 @@
                 <Fill>0.751286 0.937851 0.984426</Fill>
             </Appearance>
             <String>das2py</String>
-            <ConnectedNoteIDs>1-2</ConnectedNoteIDs>
+            <ConnectedNoteIDs>1-3, 5-6</ConnectedNoteIDs>
         </Note>
-        <Note ID="1" FontSize="12.0" Position="250.290771,200.403778" Width="200.0">
+        <Note ID="1" FontSize="12.0" Position="385.921509,168.696106" Width="200.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Border Weight="1"></Border>
@@ -19,7 +19,7 @@
             <String>make local copies of d2f, das2f, das2j</String>
             <ConnectedNoteIDs>0</ConnectedNoteIDs>
         </Note>
-        <Note ID="2" FontSize="12.0" Position="250.0,268.584747" Width="200.0">
+        <Note ID="2" FontSize="12.0" Position="383.672729,228.533234" Width="200.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Border Weight="1"></Border>
@@ -28,9 +28,45 @@
             <String>revamp script to use helloworld.drawio by value instead of by name</String>
             <ConnectedNoteIDs>0</ConnectedNoteIDs>
         </Note>
+        <Note ID="3" FontSize="12.0" Position="251.542236,274.697968" Width="100.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.751286 0.937851 0.984426</Fill>
+            </Appearance>
+            <String>find helo.py, etc</String>
+            <ConnectedNoteIDs>0, 4</ConnectedNoteIDs>
+        </Note>
+        <Note ID="4" FontSize="12.0" Position="305.33252,303.524963" Width="55.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.751286 0.937851 0.984426</Fill>
+            </Appearance>
+            <String>emit.py</String>
+            <ConnectedNoteIDs>3</ConnectedNoteIDs>
+        </Note>
+        <Note ID="5" FontSize="12.0" Position="252.0,347.0" Width="150.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.669404 0.885265 0.567007</Border>
+                <Fill>0.743783 0.983628 0.630008</Fill>
+            </Appearance>
+            <String>das2j is not showing json</String>
+            <ConnectedNoteIDs>0</ConnectedNoteIDs>
+        </Note>
+        <Note ID="6" FontSize="12.0" Position="390.0,111.0" Width="89.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.751286 0.937851 0.984426</Fill>
+            </Appearance>
+            <String>get rid of fb.pl</String>
+            <ConnectedNoteIDs>0</ConnectedNoteIDs>
+        </Note>
     </Notes>
     <BackgroundShapes></BackgroundShapes>
-    <AutoFit>0</AutoFit>
+    <AutoFit>0, 3-6</AutoFit>
     <NoteStyles>
         <Style Name="Bubble (Blue)" ID="D6B56735-CA20-467F-833B-E2591F8E8814" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
             <BorderThickness>1</BorderThickness>

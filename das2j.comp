@@ -1,4 +1,4 @@
-# in: [ root name d2f ]
+# in: [ root name d2f das2f ]
 # out: [ fb ]
 
 echo das2j.comp
@@ -11,5 +11,22 @@ output_json=/dev/fd/7
 
 read das2f <$input_das2f
 
-$das2f 3<$input_root 4<$input_name 5<$input_d2f 6>$output_json &
+# read root, then re-send it
+read root <$input_root
+temp_input_root=das2ftemp_root_$RANDOM
+echo $root >$temp_input_root
+
+tempfbfile1=das2ftemp2_$RANDOM
+$das2f 3<$temp_input_root 4<$input_name 5<$input_d2f 6>$tempfbfile1 &
 pid=$!
+
+wait $pid
+cp $tempfbfile1 fb.pl
+
+das2fdir=$root/das2f
+$root/das2j/layercomponent_query.bash >$output_json
+
+rm -f $tempfbfile1 
+rm -f $tempfbfile2
+rm -f $temp_input_root
+rm -f fb.pl
