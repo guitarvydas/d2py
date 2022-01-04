@@ -2,6 +2,7 @@
 # out: [ fb ]
 
 echo das2j.comp
+set -x
 
 input_root=/dev/fd/3
 input_name=/dev/fd/4
@@ -9,7 +10,24 @@ input_d2f=/dev/fd/5
 input_das2f=/dev/fd/6
 output_json=/dev/fd/7
 
+temprootduct=das2jduct_$RANDOM
+mkfifo $temprootduct
+
+fbfile=fb.pl
+
 read das2f <$input_das2f
 
-$das2f 3<$input_root 4<$input_name 5<$input_d2f 6>$output_json &
+read root <$input_root
+das2jdir=$root/das2j
+# forward root to children...
+echo $root >$temprootduct &
+
+
+# for bootstrap, write output factbase into fp.pl
+$das2f 3<$temprootduct 4<$input_name 5<$input_d2f 6>$fbfile &
 pid=$!
+
+# ${das2jdir}/layercomponent_query.bash
+# cat fb.pl >$output_json
+
+echo early exit

@@ -1,0 +1,13 @@
+das_fact(kind,cell_10,ellipse).
+das_fact(kind,cell_11,rectangle).
+das_fact(kind,cell_12,ellipse).
+das_fact(kind,cell_13,rectangle).
+das_fact(kind,cell_14,edge).
+das_fact(kind,cell_15,ellipse).
+das_fact(kind,cell_16,ellipse).
+das_fact(kind,cell_4,rectangle).
+das_fact(kind,cell_5,rectangle).
+das_fact(kind,cell_6,rectangle).
+das_fact(kind,cell_7,rectangle).
+das_fact(kind,cell_8,rectangle).
+das_fact(kind,cell_9,edge).
