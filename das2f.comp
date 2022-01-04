@@ -2,7 +2,6 @@
 # out: [ fb ]
 
 echo das2f.comp
-set -x 
 
 input_root=/dev/fd/3
 input_name=/dev/fd/4
@@ -34,3 +33,6 @@ das2fdir=$root/das2f
 rm -f $tempfbfile1 
 rm -f $tempfbfile2
 rm -f $temp_input_root
+
+cat $fb >$output_fb
+rm -f $fb

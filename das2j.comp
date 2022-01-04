@@ -1,8 +1,7 @@
-# in: [ root name d2f ]
+# in: [ root name d2f das2f ]
 # out: [ fb ]
 
 echo das2j.comp
-set -x
 
 input_root=/dev/fd/3
 input_name=/dev/fd/4
@@ -10,24 +9,24 @@ input_d2f=/dev/fd/5
 input_das2f=/dev/fd/6
 output_json=/dev/fd/7
 
-temprootduct=das2jduct_$RANDOM
-mkfifo $temprootduct
-
-fbfile=fb.pl
-
 read das2f <$input_das2f
 
+# read root, then re-send it
 read root <$input_root
-das2jdir=$root/das2j
-# forward root to children...
-echo $root >$temprootduct &
+temp_input_root=das2ftemp_root_$RANDOM
+echo $root >$temp_input_root
 
-
-# for bootstrap, write output factbase into fp.pl
-$das2f 3<$temprootduct 4<$input_name 5<$input_d2f 6>$fbfile &
+tempfbfile1=das2ftemp2_$RANDOM
+$das2f 3<$temp_input_root 4<$input_name 5<$input_d2f 6>$tempfbfile1 &
 pid=$!
 
-# ${das2jdir}/layercomponent_query.bash
-# cat fb.pl >$output_json
+wait $pid
+cp $tempfbfile1 fb.pl
 
-echo early exit
+das2fdir=$root/das2f
+$root/das2j/layercomponent_query.bash >$output_json
+
+rm -f $tempfbfile1 
+rm -f $tempfbfile2
+rm -f $temp_input_root
+rm -f fb.pl

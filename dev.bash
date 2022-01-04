@@ -15,22 +15,23 @@ mkfifo $ductA $ductB $ductC $ductD $ductE
 # echo helloworld >$ductB &
 # cat <$ductC >d2f.fb.pl
 
-# for das2f
-./das2f.comp 3<$ductA 4<$ductB 5<$ductC 6>$ductD &
-pid1=$!
-realpath ~/app >$ductA &
-echo helloworld >$ductB &
-realpath ./d2f.comp >$ductC &
-cat <$ductD >das2f.fb.pl
-
-# # for das2j
-# ./das2j.comp 3<$ductA 4<$ductB 5<$ductC 6<$ductD 7>$ductE &
+# # for das2f
+# ./das2f.comp 3<$ductA 4<$ductB 5<$ductC 6>$ductD &
 # pid1=$!
 # realpath ~/app >$ductA &
 # echo helloworld >$ductB &
 # realpath ./d2f.comp >$ductC &
-# realpath ./das2f.comp >$ductD &
-# cat <$ductE
+# cat <$ductD >das2f.fb.pl
+
+# for das2j
+./das2j.comp 3<$ductA 4<$ductB 5<$ductC 6<$ductD 7>$ductE &
+pid1=$!
+realpath ~/app >$ductA &
+echo helloworld >$ductB &
+realpath ./d2f.comp >$ductC &
+realpath ./das2f.comp >$ductD &
+cat <$ductE >out.json
+cat out.json
 
 # # for das2py
 # ./das2py.comp 3<$ductA 4<$ductB 5<$ductC 6<$ductD 7<$ductE &
