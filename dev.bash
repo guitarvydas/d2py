@@ -1,3 +1,6 @@
+echo use run.bash
+exit
+
 clear
 echo dev.bash
 ductA=ductA_$RANDOM
