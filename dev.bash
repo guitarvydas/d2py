@@ -12,7 +12,6 @@ mkfifo $ductA $ductB $ductC $ductD $ductE
 root=`realpath ../`
 
 # for d2f 
-set -x
 $root/d2py/d2f.comp 3<$ductA 4<$ductB 5>$ductC &
 echo $root >$ductA &
 echo helloworld.drawio >$ductB &
