@@ -1,5 +1,5 @@
-echo use run.bash
-exit
+# echo use run.bash
+# exit
 
 clear
 echo dev.bash
@@ -9,13 +9,13 @@ ductC=ductC_$RANDOM
 ductD=ductD_$RANDOM
 ductE=ductE_$RANDOM
 mkfifo $ductA $ductB $ductC $ductD $ductE
+root=`realpath ../`
 
 # for d2f 
 set -x
-./d2f.comp 3<$ductA 4<$ductB 5>$ductC &
-str=`realpath ~/app`
-echo $str >$ductA &
-echo helloworld >$ductB &
+$root/d2py/d2f.comp 3<$ductA 4<$ductB 5>$ductC &
+echo $root >$ductA &
+echo helloworld.drawio >$ductB &
 cat <$ductC >d2f.fb.pl
 cat d2f.fb.pl
 

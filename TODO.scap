@@ -8,7 +8,7 @@
                 <Fill>0.751286 0.937851 0.984426</Fill>
             </Appearance>
             <String>das2py</String>
-            <ConnectedNoteIDs>1-3, 5-8, 11</ConnectedNoteIDs>
+            <ConnectedNoteIDs>1-3, 5-7, 11</ConnectedNoteIDs>
         </Note>
         <Note ID="1" FontSize="12.0" Position="506.375,325.620819" Width="200.0">
             <Appearance>
@@ -73,15 +73,6 @@
             <String>use sockets instead of pipes</String>
             <ConnectedNoteIDs>0</ConnectedNoteIDs>
         </Note>
-        <Note ID="8" FontSize="12.0" Position="374.0,148.0" Width="199.0">
-            <Appearance>
-                <Alignment>Left</Alignment>
-                <Border Weight="1"></Border>
-                <Fill>0.751286 0.937851 0.984426</Fill>
-            </Appearance>
-            <String>rewrite def.com to use ../prep/prep</String>
-            <ConnectedNoteIDs>0</ConnectedNoteIDs>
-        </Note>
         <Note ID="10" FontSize="12.0" Position="573.405151,394.552612" Width="150.0">
             <Appearance>
                 <Alignment>Left</Alignment>
@@ -100,9 +91,25 @@
             <String>d2f uses ../prep/pre</String>
             <ConnectedNoteIDs>0</ConnectedNoteIDs>
         </Note>
+        <Note ID="12" FontSize="12.0" Position="583.819702,277.971375" Width="200.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.751286 0.937851 0.984426</Fill>
+            </Appearance>
+            <String>make ../ copies of d2f, das2f, das2j</String>
+        </Note>
+        <Note ID="13" FontSize="12.0" Position="515.245483,246.903931" Width="228.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.751286 0.937851 0.984426</Fill>
+            </Appearance>
+            <String>make ../d2f and use ../d2f/d2f.bash</String>
+        </Note>
     </Notes>
     <BackgroundShapes></BackgroundShapes>
-    <AutoFit>0, 3-8, 10-11</AutoFit>
+    <AutoFit>0, 3-7, 10-11</AutoFit>
     <NoteStyles>
         <Style Name="Bubble (Blue)" ID="D6B56735-CA20-467F-833B-E2591F8E8814" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
             <BorderThickness>1</BorderThickness>
