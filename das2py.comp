@@ -2,7 +2,6 @@
 # out: [ fb ]
 
 echo das2j.comp
-set -x
 
 input_root=/dev/fd/3
 input_name=/dev/fd/4

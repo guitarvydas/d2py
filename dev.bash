@@ -1,5 +1,5 @@
-# echo use run.bash
-# exit
+echo use run.bash
+exit
 
 clear
 echo dev.bash
