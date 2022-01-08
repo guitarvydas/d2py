@@ -89,7 +89,7 @@
                 <Fill>0.743783 0.983628 0.630008</Fill>
             </Appearance>
             <String>d2f uses ../prep/pre</String>
-            <ConnectedNoteIDs>0</ConnectedNoteIDs>
+            <ConnectedNoteIDs>0, 13</ConnectedNoteIDs>
         </Note>
         <Note ID="12" FontSize="12.0" Position="583.819702,277.971375" Width="200.0">
             <Appearance>
@@ -99,17 +99,27 @@
             </Appearance>
             <String>make ../ copies of d2f, das2f, das2j</String>
         </Note>
-        <Note ID="13" FontSize="12.0" Position="515.245483,246.903931" Width="228.0">
+        <Note ID="13" FontSize="12.0" Position="522.986816,246.095337" Width="228.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.669404 0.885265 0.567007</Border>
+                <Fill>0.743783 0.983628 0.630008</Fill>
+            </Appearance>
+            <String>make ../d2f and use ../d2f/d2f.bash</String>
+            <ConnectedNoteIDs>11, 14</ConnectedNoteIDs>
+        </Note>
+        <Note ID="14" FontSize="12.0" Position="784.869873,242.535858" Width="89.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Border Weight="1"></Border>
                 <Fill>0.751286 0.937851 0.984426</Fill>
             </Appearance>
-            <String>make ../d2f and use ../d2f/d2f.bash</String>
+            <String>document d2f</String>
+            <ConnectedNoteIDs>13</ConnectedNoteIDs>
         </Note>
     </Notes>
     <BackgroundShapes></BackgroundShapes>
-    <AutoFit>0, 3-7, 10-11</AutoFit>
+    <AutoFit>0, 3-7, 10-11, 14</AutoFit>
     <NoteStyles>
         <Style Name="Bubble (Blue)" ID="D6B56735-CA20-467F-833B-E2591F8E8814" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
             <BorderThickness>1</BorderThickness>
