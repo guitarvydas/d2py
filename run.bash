@@ -1,3 +1,7 @@
+echo use dev.bash for now
+exit 1
+
+# << checked for --exclusive >>
 
 clear
 echo dev.bash
