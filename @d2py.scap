@@ -10,7 +10,7 @@
             <String>das2py</String>
             <ConnectedNoteIDs>1-3, 5-7, 11</ConnectedNoteIDs>
         </Note>
-        <Note ID="1" FontSize="12.0" Position="506.375,325.620819" Width="200.0">
+        <Note ID="1" FontSize="12.0" Position="506.0,326.0" Width="200.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Border Weight="1"></Border>
@@ -19,7 +19,7 @@
             <String>make local copies of d2f, das2f, das2j</String>
             <ConnectedNoteIDs>0, 10</ConnectedNoteIDs>
         </Note>
-        <Note ID="2" FontSize="12.0" Position="401.660767,189.103699" Width="200.0">
+        <Note ID="2" FontSize="12.0" Position="402.0,189.0" Width="200.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Border Weight="1"></Border>
@@ -28,7 +28,7 @@
             <String>revamp script to use helloworld.drawio by value instead of by name</String>
             <ConnectedNoteIDs>0</ConnectedNoteIDs>
         </Note>
-        <Note ID="3" FontSize="12.0" Position="251.542236,274.697968" Width="100.0">
+        <Note ID="3" FontSize="12.0" Position="252.0,275.0" Width="100.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Border Weight="1">0.669404 0.885265 0.567007</Border>
@@ -37,7 +37,7 @@
             <String>find helo.py, etc</String>
             <ConnectedNoteIDs>0, 4</ConnectedNoteIDs>
         </Note>
-        <Note ID="4" FontSize="12.0" Position="305.33252,303.524963" Width="55.0">
+        <Note ID="4" FontSize="12.0" Position="305.0,304.0" Width="55.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Border Weight="1">0.669404 0.885265 0.567007</Border>
@@ -55,7 +55,7 @@
             <String>das2j is not showing json</String>
             <ConnectedNoteIDs>0</ConnectedNoteIDs>
         </Note>
-        <Note ID="6" FontSize="12.0" Position="350.081665,103.791229" Width="89.0">
+        <Note ID="6" FontSize="12.0" Position="350.0,104.0" Width="89.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Border Weight="1"></Border>
@@ -73,7 +73,7 @@
             <String>use sockets instead of pipes</String>
             <ConnectedNoteIDs>0</ConnectedNoteIDs>
         </Note>
-        <Note ID="10" FontSize="12.0" Position="573.405151,394.552612" Width="150.0">
+        <Note ID="10" FontSize="12.0" Position="573.0,395.0" Width="150.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Border Weight="1"></Border>
@@ -82,7 +82,7 @@
             <String>make local copy of prep?</String>
             <ConnectedNoteIDs>1</ConnectedNoteIDs>
         </Note>
-        <Note ID="11" FontSize="12.0" Position="391.809082,257.759766" Width="120.0">
+        <Note ID="11" FontSize="12.0" Position="392.0,258.0" Width="120.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Border Weight="1">0.669404 0.885265 0.567007</Border>
@@ -91,7 +91,7 @@
             <String>d2f uses ../prep/pre</String>
             <ConnectedNoteIDs>0, 13</ConnectedNoteIDs>
         </Note>
-        <Note ID="12" FontSize="12.0" Position="583.819702,277.971375" Width="200.0">
+        <Note ID="12" FontSize="12.0" Position="584.0,278.0" Width="200.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Border Weight="1"></Border>
@@ -99,7 +99,7 @@
             </Appearance>
             <String>make ../ copies of d2f, das2f, das2j</String>
         </Note>
-        <Note ID="13" FontSize="12.0" Position="522.986816,246.095337" Width="228.0">
+        <Note ID="13" FontSize="12.0" Position="523.0,246.0" Width="228.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Border Weight="1">0.669404 0.885265 0.567007</Border>
@@ -108,11 +108,11 @@
             <String>make ../d2f and use ../d2f/d2f.bash</String>
             <ConnectedNoteIDs>11, 14</ConnectedNoteIDs>
         </Note>
-        <Note ID="14" FontSize="12.0" Position="784.869873,242.535858" Width="89.0">
+        <Note ID="14" FontSize="12.0" Position="785.0,243.0" Width="89.0">
             <Appearance>
                 <Alignment>Left</Alignment>
-                <Border Weight="1"></Border>
-                <Fill>0.751286 0.937851 0.984426</Fill>
+                <Border Weight="1">0.669404 0.885265 0.567007</Border>
+                <Fill>0.743783 0.983628 0.630008</Fill>
             </Appearance>
             <String>document d2f</String>
             <ConnectedNoteIDs>13</ConnectedNoteIDs>
