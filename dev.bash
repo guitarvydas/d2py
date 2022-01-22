@@ -18,13 +18,13 @@ echo helloworld.drawio >$ductB &
 cat <$ductC >d2f.fb.pl
 cat d2f.fb.pl
 
-# # for das2f
-# ./das2f.comp 3<$ductA 4<$ductB 5<$ductC 6>$ductD &
-# pid1=$!
-# realpath ~/app >$ductA &
-# echo helloworld >$ductB &
-# realpath ./d2f.comp >$ductC &
-# cat <$ductD >das2f.fb.pl
+# for das2f
+./das2f.comp 3<$ductA 4<$ductB 5<$ductC 6>$ductD &
+pid1=$!
+echo $root >$ductA &
+echo helloworld >$ductB &
+realpath ./d2f.comp >$ductC &
+cat <$ductD >das2f.fb.pl
 
 # # for das2j
 # ./das2j.comp 3<$ductA 4<$ductB 5<$ductC 6<$ductD 7>$ductE &
