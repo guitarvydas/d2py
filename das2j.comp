@@ -1,7 +1,6 @@
 # in: [ root name d2f das2f ]
 # out: [ fb ]
 
-echo das2j.comp
 
 input_root=/dev/fd/3
 input_name=/dev/fd/4

@@ -1,5 +1,5 @@
-# echo use run.bash
-# exit
+echo use run.bash
+exit
 
 clear
 echo dev.bash
@@ -47,4 +47,4 @@ realpath ./das2f.comp >$ductD &
 realpath ./das2j.comp >$ductE &
 wait $pid
 
-# rm -f $ductA $ductB $ductC $ductD $ductE
+rm -f $ductA $ductB $ductC $ductD $ductE
