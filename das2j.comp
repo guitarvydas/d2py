@@ -1,7 +1,6 @@
 # in: [ root name d2f das2f ]
 # out: [ fb ]
 
-echo das2j.comp
 
 input_root=/dev/fd/3
 input_name=/dev/fd/4
@@ -23,7 +22,6 @@ pid=$!
 wait $pid
 cp $tempfbfile1 fb.pl
 
-das2fdir=$root/das2f
 $root/das2j/layercomponent_query.bash >$output_json
 
 rm -f $tempfbfile1 
