@@ -23,7 +23,6 @@ pid=$!
 wait $pid
 cp $tempfbfile1 fb.pl
 
-das2fdir=$root/das2f
 $root/das2j/layercomponent_query.bash >$output_json
 
 rm -f $tempfbfile1 

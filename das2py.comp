@@ -1,7 +1,7 @@
 # in: [ root name d2f das2f das2j ]
 # out: [ fb ]
 
-echo das2j.comp
+echo d2py.comp
 
 input_root=/dev/fd/3
 input_name=/dev/fd/4
@@ -26,7 +26,7 @@ $das2j 3<$temp_input_root 4<$temp_input_name 5<$input_d2f 6<$input_das2f 7>$temp
 pid=$!
 
 wait $pid
-python $root/shu-das2py/emit.py $tempjsonfile1 $name
+python emit.py $tempjsonfile1 `basename $name .drawio`
 
 rm -f $tempjsonfile1 
 rm -f $temp_input_root
