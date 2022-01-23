@@ -26,25 +26,25 @@ root=`realpath ../`
 # realpath ./d2f.comp >$ductC &
 # cat <$ductD >das2f.fb.pl
 
-# for das2j
-./das2j.comp 3<$ductA 4<$ductB 5<$ductC 6<$ductD 7>$ductE &
-pid1=$!
-echo $root >$ductA &
-echo helloworld.drawio >$ductB &
-realpath ./d2f.comp >$ductC &
-realpath ./das2f.comp >$ductD &
-cat <$ductE >out.json
-echo JSON output...
-cat out.json
-
-# # for das2py
-# ./das2py.comp 3<$ductA 4<$ductB 5<$ductC 6<$ductD 7<$ductE &
+# # for das2j
+# ./das2j.comp 3<$ductA 4<$ductB 5<$ductC 6<$ductD 7>$ductE &
 # pid1=$!
 # echo $root >$ductA &
 # echo helloworld.drawio >$ductB &
 # realpath ./d2f.comp >$ductC &
 # realpath ./das2f.comp >$ductD &
-# realpath ./das2j.comp >$ductE &
-# wait $pid
+# cat <$ductE >out.json
+# echo JSON output...
+# cat out.json
+
+# for das2py
+./das2py.comp 3<$ductA 4<$ductB 5<$ductC 6<$ductD 7<$ductE &
+pid1=$!
+echo $root >$ductA &
+echo helloworld.drawio >$ductB &
+realpath ./d2f.comp >$ductC &
+realpath ./das2f.comp >$ductD &
+realpath ./das2j.comp >$ductE &
+wait $pid
 
 # rm -f $ductA $ductB $ductC $ductD $ductE
