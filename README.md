@@ -47,3 +47,59 @@ The routing table belongs to `helloworld`.
 `Hello` cannot send messages directly to `world` and v.v.
 ![[helloworld-Message Routing.svg]]
 ## Run.bash
+![[run.svg]]
+Green circles are inputs.
+Purple circles are functions/scripts (names of scripts).
+The red box is synchronous code.
+The purple box is an `Apply` operator that invokes the various input scripts (C,D and E)
+Gray boxes are hard-wired inputs witten into run.bash[^1].
+[^1]: In essence, run.bash is like a test-harness that runs the component *das2py*.
+The Gray database ("out.json") is a JSON file created by the `@das2j` process.
+The yellow databases are the generated files[^2].
+[^2]: In a fully-componentized system, these would probably be outputs, but this example is a POC (Proof of Concept) which used existing tools (e.g. *bash* and the filesystem)
+The letters A/B/C/D/E are notes-to-self that relate to the text code of run.bash.
+Arrows are `ducts` that connect ports and operators.  In `bash`, we can implement `ducts` as pipes (see `mkfifo`) and in other cases, we might implement ducts as sockets.  Sometimes, we might choose to implement `ducts` as function calls[^3].
+[^3]: But! Be careful.  Ducts are asynchronous message paths and functions are synchronous.  For ideas on how to implement asynchronous messaging using function calls see [Call/Return Spaghetti](https://guitarvydas.github.io/2020/12/09/CALL-RETURN-Spaghetti.html)
+## Bash Code
+```
+
+clear
+ductA=ductA_$RANDOM
+ductB=ductB_$RANDOM
+ductC=ductC_$RANDOM
+ductD=ductD_$RANDOM
+ductE=ductE_$RANDOM
+mkfifo $ductA $ductB $ductC $ductD $ductE
+root=`realpath ../`
+
+./das2py.comp 3<$ductA 4<$ductB 5<$ductC 6<$ductD 7<$ductE &
+pid1=$!
+echo $root >$ductA &
+echo helloworld.drawio >$ductB &
+realpath ./d2f.comp >$ductC &
+realpath ./das2f.comp >$ductD &
+realpath ./das2j.comp >$ductE &
+wait $pid
+
+rm -f $ductA $ductB $ductC $ductD $ductE
+
+echo
+echo RUNNING top.py '...'
+chmod +x top.py
+./top.py
+```
+The above code implements the diagram.
+
+Note:
+- ducts are implemented as pipes using `mkfifo`. We give each duct a RANDOM name.
+- We must use `&` to spin off the `das2py.comp` component.  To send data to the `das2py` component, we must, also, use `&`[^4].
+[^4]: This is, actually an illustration of how wiring non-atomic concepts into basic technology results in bloatware.  Rendezvous is a molecule, not an atom.  Bash has Rendezvous hard-wired into it, and, this means that we had to imagine clever ways to circumvent the unwanted molecule to get at the atomic construct (asynchronous processes).
+
+The real work is done in 1 line - 
+```
+./das2py.comp 3<$ductA 4<$ductB 5<$ductC 6<$ductD 7<$ductE &
+```
+This line invokes the `Component` called *das2py.comp*.  This line connects 5 ducts as inputs (A-E) and connects 0 outputs.  The `Component` is spun off in a fork (`&`), then we send data to the component by writing it to the appropriate ducts[^5].
+[^5]: Each data send is suffixed by `&` lest `run.bash` gets hung waiting for the `das2py.comp` to start.  This circuments the problem of automatically getting synchronous behaviour when we didn't want it.
+
+## Github
