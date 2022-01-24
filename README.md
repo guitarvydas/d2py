@@ -109,6 +109,8 @@ This line invokes the `Component` called *das2py.comp*.  This line connects 5 du
 [das2f](https://github.com/guitarvydas/das2f)
 [das2j](https://github.com/guitarvydas/das2j)
 [prep](https://github.com/guitarvydas/prep)
+npm install ohm-js atob pako yargs
+[ohm-js](git@github.com:harc/ohm.git)
 
 The documentation starts at README.md.
 
