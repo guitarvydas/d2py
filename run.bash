@@ -1,7 +1,3 @@
-## for bootstrap
-../das2f/build.bash ..
-../das2j/build.bash ..
-##
 clear
 ductA=ductA_$RANDOM
 ductB=ductB_$RANDOM
