@@ -103,3 +103,25 @@ This line invokes the `Component` called *das2py.comp*.  This line connects 5 du
 [^5]: Each data send is suffixed by `&` lest `run.bash` gets hung waiting for the `das2py.comp` to start.  This circuments the problem of automatically getting synchronous behaviour when we didn't want it.
 
 ## Github
+[d2py (branch main)](https://github.com/guitarvydas/d2py)
+
+[d2f](https://github.com/guitarvydas/d2f)
+[das2f](https://github.com/guitarvydas/das2f)
+[das2j](https://github.com/guitarvydas/das2j)
+[prep](https://github.com/guitarvydas/prep)
+
+The documentation starts at README.md.
+
+Use Obsidian to view README.md.
+
+Pull all of the above directories into the same working directory.  
+
+`Cd` into `d2py`.  Run `run.bash`
+
+## Auxiliary Files
+`mpos.py` and `dispatcher.py` were manually written for this POC.
+
+`Mpos.py` (message-passing O/S) implements `Component` details.
+
+`Dispatcher.py` implements multi-tasking between components.  The article [Call/Return Spaghetti](https://guitarvydas.github.io/2020/12/09/CALL-RETURN-Spaghetti.html) can be used to understand the basics of what is going on.  Notice that `mluti-tasking` does *not* have to mean *isolation* between `Components`.  *Isolation* is a feature of multi-purpose operating systems like Linux, Windows and MacOS[^6].
+[^6]: A program that contains bugs contains bugs.  It doesn't matter if the bug was caused by multi-tasking or a typo or anything else.  During Design, programmers would prefer to Isolate components to help Design and to help in tracking down bugs.  In Production Engineering, programmers might remove Isolation to gain speed and to reduct hardware costs.
