@@ -1,18 +1,24 @@
-convention: string args are labelled $1, $2, ...
-file args are /dev/fd/3/, /dev/fd/4 ...
+Diagram To Python Transpiler
 
-each arg takes up one arg slot 
-hence, if there are 3 args they are:
+## HelloWorld .drawio
+![[helloworld.svg]]
+The `app` is called `helloworld`.
+It contains two `Components`.`
+Components` are `asynchronous` by default - they run at any time and in any order.
+`Components` have inputs and outputs. 
+Inputs are green round circles and outputs are yellow round circles.
+Red boxes are used for defining `synchronous` instructions.  Synchronous boxes run instructions run from the top to the bottom, sequentially and cannot be interrupted.
+Arrows show `message` flows between outputs and inputs.
 
-command $1 $2 $3
-or
-command $1 /dev/fd/4 $3
-or ...
-
-i.e. if 1st arg is a string, it is $1, else it is /dev/fd/3
-i.e. if 2nd arg is a string, it is $2, else it is /dev/fd/4
-i.e. if 3rd arg is a string, it is $3, else it is /dev/fd/5
-...
-
-string args can be passed directly into proc
-other args/returns must use a pipe
+## Example
+In this example diagram
+- We create two Components called `hello` and `world`.
+- We put Python code inside the `Components`.
+- We string the two `Components` together with an `arrow`.  The `arrow` flows from `hello/out` to `world/in`.
+- The `app` is called `helloworld`.  It has one input called `start`.
+- When we send a message (any message) to `helloworld/start`
+	1. The message is forwarded to `hello/in`.
+	2. `Hello` does its thing, then sends a message to it `hello/out` port.
+	3. When a message arrives at the `world/in` port, `world` does its thing.
+	4. Then the app stops.  (Nothing else happens).
+## Run.bash

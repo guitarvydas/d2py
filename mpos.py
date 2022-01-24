@@ -124,7 +124,7 @@ class Component:
             self.inputQueue.enqueue (m)
 
         def kickstart (self):
-            m = InputMessage (self.idInParent, "p_", True)
+            m = InputMessage (self.idInParent, "go", True)
             self.enqueueInput (m)
 
         def send (self, tag, data):
