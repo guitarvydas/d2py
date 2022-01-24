@@ -21,4 +21,5 @@ rm -f $ductA $ductB $ductC $ductD $ductE
 
 echo
 echo RUNNING top.py '...'
-python top.py
+chmod +x top.py
+./top.py

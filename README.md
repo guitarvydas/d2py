@@ -1,4 +1,14 @@
 Diagram To Python Transpiler
+## Synopsis
+Transpile a drawing to running Python code.
+
+The drawing is `helloworld.drawio`.
+
+The generated code is run by `./top.py` on the command line.
+
+The rest of this README describes 
+1. how to read the diagram
+2. how to use `run.bash` to transpile the diagram to Python.
 
 ## HelloWorld .drawio
 ![[helloworld.svg]]
@@ -21,4 +31,19 @@ In this example diagram
 	2. `Hello` does its thing, then sends a message to it `hello/out` port.
 	3. When a message arrives at the `world/in` port, `world` does its thing.
 	4. Then the app stops.  (Nothing else happens).
+
+## Layers
+### Top
+![[helloworld-Top Level.svg]]
+### Two Components
+![[helloworld-Two Components.svg]]
+### Inside Hello
+![[helloworld-Inside Hello.svg]]
+### Inside World
+![[helloworld-Inside World.svg]]
+### Message Routing
+The routing table belongs to `helloworld`.
+
+`Hello` cannot send messages directly to `world` and v.v.
+![[helloworld-Message Routing.svg]]
 ## Run.bash
