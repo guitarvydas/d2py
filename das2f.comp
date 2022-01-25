@@ -1,8 +1,6 @@
 # in: [ root name d2f ]
 # out: [ fb ]
 
-set -x
-
 echo das2f 1>&2
 
 input_root=/dev/fd/3
