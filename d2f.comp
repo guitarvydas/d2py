@@ -8,6 +8,7 @@
 #   out: [fb]
 # }
 
+echo d2f 1>&2
 
 ductroot=/dev/fd/3
 ductname=/dev/fd/4

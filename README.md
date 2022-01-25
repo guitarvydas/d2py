@@ -105,12 +105,12 @@ This line invokes the `Component` called *das2py.comp*.  This line connects 5 du
 ## Github
 [d2py (branch main)](https://github.com/guitarvydas/d2py)
 
+[desgin rule checker](https://github.com/guitarvydas/dr)
 [d2f](https://github.com/guitarvydas/d2f)
 [das2f](https://github.com/guitarvydas/das2f)
 [das2j](https://github.com/guitarvydas/das2j)
 [prep](https://github.com/guitarvydas/prep)
 npm install ohm-js atob pako yargs
-[ohm-js](git@github.com:harc/ohm.git)
 
 The documentation starts at README.md.
 
@@ -119,6 +119,23 @@ Use Obsidian to view README.md.
 Pull all of the above directories into the same working directory.  
 
 `Cd` into `d2py`.  Run `run.bash`
+
+```
+#!/bin/bash
+npm install ohm-js yargs atob pako
+# dr
+git clone git@github.com:guitarvydas/dr.git
+# prep
+git clone git@github.com:guitarvydas/prep.git
+# d2f
+git clone git@github.com:guitarvydas/d2f.git
+# das2f
+git clone git@github.com:guitarvydas/das2f.git
+# das2j
+git clone git@github.com:guitarvydas/das2j.git
+# d2py
+git clone git@github.com:guitarvydas/d2py.git
+```
 
 ## Auxiliary Files
 `mpos.py` and `dispatcher.py` were manually written for this POC.

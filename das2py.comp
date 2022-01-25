@@ -1,6 +1,8 @@
 # in: [ root name d2f das2f das2j ]
 # out: [ fb ]
 
+echo das2py 1>&2
+
 input_root=/dev/fd/3
 input_name=/dev/fd/4
 input_d2f=/dev/fd/5

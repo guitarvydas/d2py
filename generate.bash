@@ -17,8 +17,3 @@ realpath ./das2j.comp >$ductE &
 wait $pid
 
 rm -f $ductA $ductB $ductC $ductD $ductE
-
-echo
-echo RUNNING top.py '...'
-chmod +x top.py
-./top.py

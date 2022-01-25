@@ -8,7 +8,7 @@
                 <Fill>0.751286 0.937851 0.984426</Fill>
             </Appearance>
             <String>das2py</String>
-            <ConnectedNoteIDs>1-3, 5-7, 11, 15</ConnectedNoteIDs>
+            <ConnectedNoteIDs>1-3, 5-7, 11, 15-16</ConnectedNoteIDs>
         </Note>
         <Note ID="1" FontSize="12.0" Position="506.0,326.0" Width="200.0">
             <Appearance>
@@ -126,9 +126,27 @@
             <String>make video</String>
             <ConnectedNoteIDs>0</ConnectedNoteIDs>
         </Note>
+        <Note ID="16" FontSize="12.0" Position="684.760742,203.978836" Width="81.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.751286 0.937851 0.984426</Fill>
+            </Appearance>
+            <String>usage video</String>
+            <ConnectedNoteIDs>0, 17</ConnectedNoteIDs>
+        </Note>
+        <Note ID="17" FontSize="12.0" Position="771.988403,171.533447" Width="106.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.751286 0.937851 0.984426</Fill>
+            </Appearance>
+            <String>_dev.bash failing</String>
+            <ConnectedNoteIDs>16</ConnectedNoteIDs>
+        </Note>
     </Notes>
     <BackgroundShapes></BackgroundShapes>
-    <AutoFit>0, 3-7, 10-11, 14-15</AutoFit>
+    <AutoFit>0, 3-7, 10-11, 14-17</AutoFit>
     <NoteStyles>
         <Style Name="Bubble (Blue)" ID="D6B56735-CA20-467F-833B-E2591F8E8814" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
             <BorderThickness>1</BorderThickness>
