@@ -120,11 +120,11 @@
         <Note ID="15" FontSize="12.0" Position="251.0,409.0" Width="78.0">
             <Appearance>
                 <Alignment>Left</Alignment>
-                <Border Weight="1"></Border>
-                <Fill>0.751286 0.937851 0.984426</Fill>
+                <Border Weight="1">0.669404 0.885265 0.567007</Border>
+                <Fill>0.743783 0.983628 0.630008</Fill>
             </Appearance>
             <String>make video</String>
-            <ConnectedNoteIDs>0</ConnectedNoteIDs>
+            <ConnectedNoteIDs>0, 18</ConnectedNoteIDs>
         </Note>
         <Note ID="16" FontSize="12.0" Position="684.760742,203.978836" Width="81.0">
             <Appearance>
@@ -144,9 +144,18 @@
             <String>_dev.bash failing</String>
             <ConnectedNoteIDs>16</ConnectedNoteIDs>
         </Note>
+        <Note ID="18" FontSize="12.0" Position="312.0,452.0" Width="179.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.751286 0.937851 0.984426</Fill>
+            </Appearance>
+            <String>remove copy from system disk</String>
+            <ConnectedNoteIDs>15</ConnectedNoteIDs>
+        </Note>
     </Notes>
     <BackgroundShapes></BackgroundShapes>
-    <AutoFit>0, 3-7, 10-11, 14-17</AutoFit>
+    <AutoFit>0, 3-7, 10-11, 14-18</AutoFit>
     <NoteStyles>
         <Style Name="Bubble (Blue)" ID="D6B56735-CA20-467F-833B-E2591F8E8814" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
             <BorderThickness>1</BorderThickness>

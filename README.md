@@ -10,6 +10,17 @@ The rest of this README describes
 1. how to read the diagram
 2. how to use `run.bash` to transpile the diagram to Python.
 
+## Install and Run
+```
+npm install ohm-js yargs atob pako
+git clone git@github.com:guitarvydas/dr.git
+git clone git@github.com:guitarvydas/prep.git
+git clone git@github.com:guitarvydas/d2f.git
+git clone git@github.com:guitarvydas/das2f.git
+git clone git@github.com:guitarvydas/das2j.git
+git clone git@github.com:guitarvydas/d2py.git
+```
+
 ## HelloWorld .drawio
 ![[helloworld.svg]]
 The `app` is called `helloworld`.
@@ -105,7 +116,7 @@ This line invokes the `Component` called *das2py.comp*.  This line connects 5 du
 ## Github
 [d2py (branch main)](https://github.com/guitarvydas/d2py)
 
-[desgin rule checker](https://github.com/guitarvydas/dr)
+[design rule checker](https://github.com/guitarvydas/dr)
 [d2f](https://github.com/guitarvydas/d2f)
 [das2f](https://github.com/guitarvydas/das2f)
 [das2j](https://github.com/guitarvydas/das2j)
@@ -118,22 +129,25 @@ Use Obsidian to view README.md.
 
 Pull all of the above directories into the same working directory.  
 
-`Cd` into `d2py`.  Run `run.bash`
+- cd into the `d2py` directory.
+- Run `make`
+- Run `make exec`
 
+### Get.bash
 ```
 #!/bin/bash
 npm install ohm-js yargs atob pako
-# dr
-git clone git@github.com:guitarvydas/dr.git
-# prep
+# prep - pattern matching tool
 git clone git@github.com:guitarvydas/prep.git
-# d2f
+# d2f - diagrams to factbase
 git clone git@github.com:guitarvydas/d2f.git
-# das2f
+# dr - design rule checker
+git clone git@github.com:guitarvydas/dr.git
+# das2f - diagrams, parsed to factbase
 git clone git@github.com:guitarvydas/das2f.git
-# das2j
+# das2j - diagrams, parsed to JSON
 git clone git@github.com:guitarvydas/das2j.git
-# d2py
+# d2py - diagrams, parsed to Python
 git clone git@github.com:guitarvydas/d2py.git
 ```
 
@@ -142,5 +156,5 @@ git clone git@github.com:guitarvydas/d2py.git
 
 `Mpos.py` (message-passing O/S) implements `Component` details.
 
-`Dispatcher.py` implements multi-tasking between components.  The article [Call/Return Spaghetti](https://guitarvydas.github.io/2020/12/09/CALL-RETURN-Spaghetti.html) can be used to understand the basics of what is going on.  Notice that `mluti-tasking` does *not* have to mean *isolation* between `Components`.  *Isolation* is a feature of multi-purpose operating systems like Linux, Windows and MacOS[^6].
+`Dispatcher.py` implements multi-tasking between components.  The article [Call/Return Spaghetti](https://guitarvydas.github.io/2020/12/09/CALL-RETURN-Spaghetti.html) can be used to understand the basics of what is going on.  Notice that `multi-tasking` does *not* have to mean *isolation* between `Components`.  *Isolation* is a feature of multi-purpose operating systems like Linux, Windows and MacOS[^6].
 [^6]: A program that contains bugs contains bugs.  It doesn't matter if the bug was caused by multi-tasking or a typo or anything else.  During Design, programmers would prefer to Isolate components to help Design and to help in tracking down bugs.  In Production Engineering, programmers might remove Isolation to gain speed and to reduct hardware costs.
