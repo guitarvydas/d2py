@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScappleDocument Version="1.2" ID="9DD9BF22-F6B7-434E-A600-1C2BDD344651">
+    <Notes>
+        <Note ID="0" FontSize="12.0" Position="265.0,114.0" Width="101.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.751286 0.937851 0.984426</Fill>
+            </Appearance>
+            <String>1. install ubuntu</String>
+        </Note>
+        <Note ID="1" FontSize="12.0" Position="270.930786,148.798233" Width="101.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.751286 0.937851 0.984426</Fill>
+            </Appearance>
+            <String>ubuntu one-???</String>
+        </Note>
+        <Note ID="2" FontSize="12.0" Position="282.778992,185.931656" Width="255.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.751286 0.937851 0.984426</Fill>
+            </Appearance>
+            <String>preferences &gt;&gt; extensions &gt;&gt; Oracle VirtualBox Extension Pack</String>
+        </Note>
+        <Note ID="3" FontSize="12.0" Position="562.054504,319.611633" Width="200.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.751286 0.937851 0.984426</Fill>
+            </Appearance>
+            <String>browser &gt;&gt; github.com/guitarvydas/d2py</String>
+        </Note>
+        <Note ID="4" FontSize="12.0" Position="303.0,255.0" Width="91.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.751286 0.937851 0.984426</Fill>
+            </Appearance>
+            <String>login to github</String>
+        </Note>
+        <Note ID="5" FontSize="12.0" Position="554.682739,226.208893" Width="200.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.751286 0.937851 0.984426</Fill>
+            </Appearance>
+            <String>display &gt;&gt; video memory 128M, VMSVGA </String>
+        </Note>
+        <Note ID="6" FontSize="12.0" Position="562.980713,274.707672" Width="200.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.751286 0.937851 0.984426</Fill>
+            </Appearance>
+            <String>settings &gt;&gt; screen display 1920x1440</String>
+        </Note>
+        <Note ID="8" FontSize="12.0" Position="596.0,372.0" Width="90.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.751286 0.937851 0.984426</Fill>
+            </Appearance>
+            <String>download ZIP</String>
+        </Note>
+        <Note ID="9" FontSize="12.0" Position="573.0,409.0" Width="86.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.751286 0.937851 0.984426</Fill>
+            </Appearance>
+            <String>mkdir ~/temp</String>
+        </Note>
+        <Note ID="10" FontSize="12.0" Position="574.374084,446.633423" Width="220.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.751286 0.937851 0.984426</Fill>
+            </Appearance>
+            <String>mv Downloads/d2py-main.zip ~?temp</String>
+        </Note>
+        <Note ID="11" FontSize="12.0" Position="593.0,477.0" Width="200.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.751286 0.937851 0.984426</Fill>
+            </Appearance>
+            <String>unzip d2py-main.zip &gt;&gt; d2py-main</String>
+        </Note>
+        <Note ID="12" FontSize="12.0" Position="590.0,504.0" Width="144.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.751286 0.937851 0.984426</Fill>
+            </Appearance>
+            <String>sudo apt-get install npm</String>
+        </Note>
+        <Note ID="13" FontSize="12.0" Position="597.0,531.0" Width="133.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.751286 0.937851 0.984426</Fill>
+            </Appearance>
+            <String>sudo apt-get install git</String>
+        </Note>
+        <Note ID="14" FontSize="12.0" Position="598.0,564.0" Width="125.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.751286 0.937851 0.984426</Fill>
+            </Appearance>
+            <String>chmod a+x get.bash</String>
+        </Note>
+        <Note ID="15" FontSize="12.0" Position="602.244812,592.599243" Width="200.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.751286 0.937851 0.984426</Fill>
+            </Appearance>
+            <String>download ZIPs d2f, das2f, das2j, dr, prep</String>
+        </Note>
+        <Note ID="16" FontSize="12.0" Position="612.0,634.0" Width="189.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.751286 0.937851 0.984426</Fill>
+            </Appearance>
+            <String>unzip and remove -main/-master</String>
+        </Note>
+        <Note ID="17" FontSize="12.0" Position="577.110718,698.423828" Width="212.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.751286 0.937851 0.984426</Fill>
+            </Appearance>
+            <String>npm install ohm-js yargs atob pako</String>
+        </Note>
+        <Note ID="18" FontSize="12.0" Position="596.276672,668.727417" Width="59.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.751286 0.937851 0.984426</Fill>
+            </Appearance>
+            <String>cd d2py</String>
+        </Note>
+    </Notes>
+    <BackgroundShapes></BackgroundShapes>
+    <AutoFit>0-1, 4, 8-9, 11-14, 16, 18</AutoFit>
+    <NoteStyles>
+        <Style Name="Bubble (Blue)" ID="CE6CDDBE-C7C9-4AA7-8C66-D855613D4043" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.668962 0.810287 0.895092</BorderColor>
+            <FillColor>0.743291 0.900319 0.994547</FillColor>
+        </Style>
+        <Style Name="Bubble (Green)" ID="FAA96E1E-C997-4D4E-B0D9-E4F6D74A32A7" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.669404 0.885265 0.567007</BorderColor>
+            <FillColor>0.743783 0.983628 0.630008</FillColor>
+        </Style>
+        <Style Name="Bubble (Pink)" ID="CF80DB74-2AAE-48BB-AA39-1F0535D488CF" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.894547 0.707772 0.715904</BorderColor>
+            <FillColor>0.989115 0.814114 0.999483</FillColor>
+        </Style>
+        <Style Name="Bubble (Red)" ID="F5356A98-9805-441F-AB6E-06CF5A0D0138" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.894547 0.707772 0.715904</BorderColor>
+            <FillColor>0.993942 0.786413 0.795449</FillColor>
+        </Style>
+        <Style Name="Bubble (Yellow)" ID="8540D51E-6994-4C52-B545-602F5E702D3C" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.877748 0.828289 0.562126</BorderColor>
+            <FillColor>0.975275 0.920321 0.624585</FillColor>
+        </Style>
+        <Style Name="Red Text" ID="F8A64579-43DE-44C3-AED7-EB2011B8F4BC" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="Yes" AffectNoteBody="No" AffectFade="No">
+            <TextColor>0.985954 0.0 0.02694</TextColor>
+        </Style>
+        <Style Name="Title Text" ID="3939A726-71E9-4E64-B06F-4EE2B1DFDE1E" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="No" AffectNoteBody="No" AffectFade="No">
+            <FontSize>28.0</FontSize>
+            <IsBold>Yes</IsBold>
+        </Style>
+    </NoteStyles>
+    <UISettings>
+        <BackgroundColor>0.999763 0.988395 0.949915</BackgroundColor>
+        <DefaultFont>Helvetica</DefaultFont>
+        <NoteXPadding>8.0</NoteXPadding>
+    </UISettings>
+    <PrintSettings PaperSize="612.0,792.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="na-letter" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"></PrintSettings>
+</ScappleDocument>
