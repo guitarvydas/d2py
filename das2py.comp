@@ -11,10 +11,13 @@ input_das2f=/dev/fd/6
 input_das2j=/dev/fd/7
 output_json=/dev/fd/8
 
-read das2j <$input_das2j
+#read das2j <$input_das2j
+das2j=`cat <$input_das2j`
 
 # read root, then re-send it
-read root <$input_root
+#read root <$input_root
+root=`cat <$input_root`
+
 temp_input_root=das2ftemp_root_$RANDOM
 echo $root >$temp_input_root
 # read name, then re-send it
