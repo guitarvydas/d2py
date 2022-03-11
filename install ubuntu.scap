@@ -145,9 +145,50 @@
             </Appearance>
             <String>cd d2py</String>
         </Note>
+        <Note ID="19" FontSize="12.0" Position="547.0,741.0" Width="43.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.751286 0.937851 0.984426</Fill>
+            </Appearance>
+            <String>swipl</String>
+        </Note>
+        <Note ID="20" FontSize="12.0" Position="552.0,778.0" Width="123.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.751286 0.937851 0.984426</Fill>
+            </Appearance>
+            <String>sudo apt-get update</String>
+        </Note>
+        <Note ID="21" FontSize="12.0" Position="272.0,832.0" Width="399.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.751286 0.937851 0.984426</Fill>
+            </Appearance>
+            <String>curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh</String>
+        </Note>
+        <Note ID="24" FontSize="12.0" Position="304.0,881.0" Width="110.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.751286 0.937851 0.984426</Fill>
+            </Appearance>
+            <String>nvm install 14.9.0</String>
+        </Note>
+        <Note ID="25" FontSize="12.0" Position="275.0,918.0" Width="107.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.751286 0.937851 0.984426</Fill>
+            </Appearance>
+            <String>node —version
+v14.9.0</String>
+        </Note>
     </Notes>
     <BackgroundShapes></BackgroundShapes>
-    <AutoFit>0-1, 4, 8-9, 11-14, 16, 18</AutoFit>
+    <AutoFit>0-1, 4, 8-9, 11-14, 16, 18-20, 24</AutoFit>
     <NoteStyles>
         <Style Name="Bubble (Blue)" ID="CE6CDDBE-C7C9-4AA7-8C66-D855613D4043" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
             <BorderThickness>1</BorderThickness>
