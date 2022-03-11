@@ -4,7 +4,7 @@ NODEMODULES=\
 	../node_modules/atob \
 	../node_modules/pako
 
-all: $(NODEMODULES) build
+all: $(NODEMODULES) build exec
 
 ../node_modules/ohm-js:
 	(cd .. ; npm install ohm-js)
