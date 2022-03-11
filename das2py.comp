@@ -1,6 +1,7 @@
 #!/bin/bash
 # in: [ root name d2f das2f das2j ]
 # out: [ fb ]
+set -x
 
 echo das2py 1>&2
 
