@@ -20,6 +20,8 @@ nvm install 14.9.0
 cp d2py/clone.bash .
 chmod a+x clone.bash
 ./clone.bash
+cd d2py
+make
 ```
 
 (clone.bash should do the following:
