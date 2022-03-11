@@ -16,6 +16,14 @@ sudo apt-get install swi-prolog
 sudo apt-get install git
 nvm install 14.9.0
 ```
+```
+cp d2py/clone.bash .
+chmod a+x clone.bash
+./clone.bash
+```
+
+(clone.bash should do the following:
+```
 npm install ohm-js yargs atob pako
 git clone git@github.com:guitarvydas/dr.git
 git clone git@github.com:guitarvydas/prep.git
@@ -24,6 +32,8 @@ git clone git@github.com:guitarvydas/das2f.git
 git clone git@github.com:guitarvydas/das2j.git
 git clone git@github.com:guitarvydas/d2py.git
 ```
+)
+
 
 ## HelloWorld .drawio
 ![[helloworld.svg]]
