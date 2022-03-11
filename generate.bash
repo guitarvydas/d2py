@@ -12,7 +12,7 @@ echo $root >$ductA &
 echo helloworld.drawio >$ductB &
 realpath ./d2f.comp >$ductC &
 realpath ./das2f.comp >$ductD &
-realpath ./das2j.comp >$ductE &
+realpath ./das2j.comp | tee /tmp/ductE >$ductE &
 
 ./das2py.comp 3<$ductA 4<$ductB 5<$ductC 6<$ductD 7<$ductE &
 pid1=$!
