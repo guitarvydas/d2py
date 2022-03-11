@@ -24,6 +24,8 @@ cd d2py
 make
 ```
 
+This should generate a bunch of things, then use them and culminate in running `top.py`.
+
 (clone.bash should do the following:
 ```
 npm install ohm-js yargs atob pako
