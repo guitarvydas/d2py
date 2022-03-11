@@ -12,6 +12,10 @@ The rest of this README describes
 
 ## Install and Run
 ```
+sudo apt-get install swi-prolog
+sudo apt-get install git
+nvm install 14.9.0
+```
 npm install ohm-js yargs atob pako
 git clone git@github.com:guitarvydas/dr.git
 git clone git@github.com:guitarvydas/prep.git
