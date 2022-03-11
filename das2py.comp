@@ -1,7 +1,6 @@
 #!/bin/bash
 # in: [ root name d2f das2f das2j ]
 # out: [ fb ]
-set -x
 
 echo das2py 1>&2
 
@@ -31,7 +30,7 @@ $das2j 3<$temp_input_root 4<$temp_input_name 5<$input_d2f 6<$input_das2f 7>$temp
 pid=$!
 
 wait $pid
-python emit.py $tempjsonfile1 `basename $name .drawio`
+python3 emit.py $tempjsonfile1 `basename $name .drawio`
 
 rm -f $tempjsonfile1 
 rm -f $temp_input_root
