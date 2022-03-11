@@ -36,6 +36,11 @@ git clone git@github.com:guitarvydas/d2py.git
 ```
 )
 
+To view the source code diagram:
+- start up a browswer
+- go to diagrams.net
+- open, choose start, save to device
+- open existing diagram d2py/helloworld.drawio
 
 ## HelloWorld .drawio
 ![[helloworld.svg]]
